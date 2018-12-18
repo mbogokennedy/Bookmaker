@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Site Bookmarker</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body  onload="fetchBookmarks()">
+    <div class="container">
+        <div class="header clearfix">
+            <h3 class="text-muted">Bookmarker</h3>
+        </div>
+        <div class="jumbotron">
+            <h4 class="text-info mb-3 text-center">Bookmark Your Favorite Site</h4>
+            <form id="myForm">
+                <div class="form-group ">
+                    <label>Site Name</label><br>
+                    <input type="text" class="form-control form-control-lg" id="siteName" placeholder="Website Name">
+                </div>
+                <div class="form-group">
+                    <label>Site URL</label><br>
+                    <input type="text" class="form-control form-control-lg" id="siteUrl" placeholder="Website URL">
+                </div>
+                <button class="btn btn-outline-primary btn-block p-3" type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="row-marketing">
+            <div class="col-lg-12">
+                <div id="bookmarksResults">
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <footer id="footer" class="footer align-center text-center">
+        <p>&copy; 2018 Road Lifter, INC.</p>
+    </footer>
+    <script src="js/main.js"></script>  
+</body>
+</html>
